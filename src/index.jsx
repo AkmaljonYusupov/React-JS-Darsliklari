@@ -1,24 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Footer from "./Footer.jsx";
 import "./index.jsx";
+import "./index.css";
+import { Data } from "./Data.jsx";
 import Navbar from "./Navbar.jsx";
-
-const data = [
-  { name: "React", color: "red" },
-  { name: "Html", color: "Yello" },
-  { name: "css", color: "green" },
-];
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <h1>Hello React</h1>
-
-    {data.map((value) => {
-      return <Navbar title={value} />;
-    })}
-
-    <Footer />
+    <h1>list of fruits</h1>
+    <span></span>
+    <div className="container">
+      {Data.map((value) => {
+        return <Navbar title={value} />;
+      })}
+    </div>
   </React.StrictMode>
 );

@@ -1,17 +1,17 @@
 import React, { Component } from "react";
+import "./index.css";
+import "./navbar.css";
 
 class Navbar extends Component {
   render() {
-    console.log(this.props.title.name);
+    console.log(this);
     return (
-      <div>
-        <p>
-          Name: {this.props.title.name}
-          <br />
-          Color: {this.props.title.color}
-        </p>
+      <div className="box">
+        <img src={this.props.title.img} alt="rasmlar" />
+        <h2>{this.props.title.name}</h2>
       </div>
     );
   }
 }
+
 export default Navbar;
