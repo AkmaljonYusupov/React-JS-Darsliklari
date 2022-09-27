@@ -1,0 +1,17 @@
+.container {
+  width: 260px;
+  height: 60px;
+  background-color: crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.container:active {
+  transform: scale(0.97);
+}
