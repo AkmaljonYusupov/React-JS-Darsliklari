@@ -128,6 +128,7 @@ class Table extends Component {
                   className="form-control"
                   onChange={onEnter}
                   placeholder="Enter a title"
+                  required
                 />
               </div>
               <div className="col-3">
