@@ -1,0 +1,17 @@
+#icons_ico {
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+
+}
+.bi {
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+  width: fit-content;
+}
+.bi:active {
+  transform: scale(0.97);
+}
+.bi-heart-fill:active {
+  color: yellow;
+}

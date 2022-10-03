@@ -1,14 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Footer from "./Footer";
+import Edit from "./Edit";
 import "./index";
-import Navbar from "./Navbar";
+import Table from "./Table/Table";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <h1>Hello React</h1>
-    <Navbar />
-    <Footer />
+    <Table />
+    <Edit />
   </React.StrictMode>
 );
